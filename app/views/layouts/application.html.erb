@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Board</title>
+  <title>Доска объявлений</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<%= render 'inc/header'%>
 <%= yield %>
-
+<%= render 'inc/footer'%>
 </body>
 </html>
