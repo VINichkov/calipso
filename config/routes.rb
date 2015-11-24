@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :properts
+  get 'info/socket'
+
+  get 'info/convention'
+
+  get 'info/offer'
+
   root 'index#index'
 
   resources :cities

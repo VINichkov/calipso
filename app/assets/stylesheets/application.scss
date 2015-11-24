@@ -14,3 +14,13 @@
  *= require_self
  */
 /*#установка bootstrap-sass*/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/*
+Расширение bootstrap
+*/
+.body_class{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

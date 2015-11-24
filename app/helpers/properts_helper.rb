@@ -1,0 +1,2 @@
+module PropertsHelper
+end
