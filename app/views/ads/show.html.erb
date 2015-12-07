@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @ad.name %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @ad.content %>
+</p>
+
+<p>
+  <strong>Profile:</strong>
+  <%= @ad.profile %>
+</p>
+
+<p>
+  <strong>Rubric:</strong>
+  <%= @ad.rubric %>
+</p>
+
+<%= link_to 'Edit', edit_ad_path(@ad) %> |
+<%= link_to 'Back', ads_path %>

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :profiles
+  resources :ads
+  resources :rubrics
   resources :properts
   get 'info/socket'
 
