@@ -28,17 +28,15 @@ if Propert.find_by_code('name_company').nil? then
 else
   puts 'Exeption: Option name_company already present in the table!!!'
 end
-
-puts "__Add rubric"
-if Rubric.find_by_name("Любая категория").nil? then
-  Rubric.create(name:"Любая категория", nambe:'1', rubric_id:nil)
-  puts "Added rubric"
+if Propert.find_by_code('host_name').nil? then
+  Propert.create code:'host_name', name:'host', value:'localhost'
+  puts "Added option"
 else
-  puts 'Exeption: Rubric already present in the table!!!'
+  puts 'Exeption: Option host already present in the table!!!'
 end
-if Rubric.find_by_name("Недвижимость").nil? then
-  Rubric.create(name:"Недвижимость", nambe:'1.1', rubric_id:Rubric.find_by_name("Любая категория"))
-  puts "Added rubric"
+if Propert.find_by_code('port_namber').nil? then
+  Propert.create code:'port_namber', name:'port', value:'3000'
+  puts "Added option"
 else
-  puts 'Exeption: Rubric already present in the table!!!'
+  puts 'Exeption: Option port already present in the table!!!'
 end

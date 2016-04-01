@@ -3,8 +3,8 @@ class CreateAds < ActiveRecord::Migration
     create_table :ads do |t|
       t.string :name
       t.text :content
-      t.references :profile, index: true, foreign_key: true
-      t.references :rubric, index: true, foreign_key: true
+      t.references :profile#, index: true#, foreign_key: true
+      t.references :rubric#, index: true, foreign_key: true
 
       t.timestamps null: false
     end

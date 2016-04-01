@@ -9,17 +9,9 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *
+ *=require bootstrap.scss
+ *=require bootstrap-theme.css
  *= require_tree .
  *= require_self
  */
 /*#установка bootstrap-sass*/
-@import "bootstrap";
-
-/*
-Расширение bootstrap
-*/
-.body_class{
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
