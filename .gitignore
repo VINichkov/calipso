@@ -15,8 +15,8 @@
 /log/*
 !/log/.keep
 /tmp
-
+.idea/*.*
+.gitignore
 config/settings.local.yml
 config/settings/*.local.yml
 config/environments/*.local.yml
-.idea/*
