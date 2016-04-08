@@ -1,0 +1,21 @@
+p#notice
+  = notice
+p
+  strong
+    | Name:
+  = @ad.name
+p
+  strong
+    | Content:
+  = @ad.content
+p
+  strong
+    | Profile:
+  = @ad.profile
+p
+  strong
+    | Rubric:
+  = @ad.rubric
+= link_to 'Edit', edit_ad_path(@ad)
+|  | 
+= link_to 'Back', ads_path

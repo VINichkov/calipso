@@ -1,0 +1,17 @@
+p#notice
+  = notice
+p
+  strong
+    | Code:
+  = @propert.code
+p
+  strong
+    | Name:
+  = @propert.name
+p
+  strong
+    | Value:
+  = @propert.value
+= link_to 'Edit', edit_propert_path(@propert)
+|  | 
+= link_to 'Back', properts_path

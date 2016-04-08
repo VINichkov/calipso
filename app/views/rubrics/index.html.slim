@@ -1,0 +1,31 @@
+p#notice
+  = notice
+h1
+  | Listing Rubrics
+table
+  thead
+    tr
+      th
+        | Name
+      th
+        | Nambe
+      th
+        | Rubric
+      th[colspan="3"]
+  tbody
+    - @rubrics.each do |rubric|
+      tr
+        td
+          = rubric.name
+        td
+          = rubric.nambe
+        td
+          = rubric.rubric
+        td
+          = link_to 'Show', rubric
+        td
+          = link_to 'Edit', edit_rubric_path(rubric)
+        td
+          = link_to 'Destroy', rubric, method: :delete, data: { confirm: 'Are you sure?' }
+br
+= link_to 'New Rubric', new_rubric_path

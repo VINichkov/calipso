@@ -1,0 +1,19 @@
+.row
+  .col-xs-12.col-sm-12.col-md-5.col-lg-4
+        .dropdown.btn.col-xs-12.col-sm-12.col-md-6.col-lg-6
+          - if signed_in?
+            a.dropdown-toggle[href="#" data-toggle="dropdown"]
+              |Профиль
+              b.caret
+            ul.dropdown-menu
+              li
+                = link_to 'Выйти', destroy_profile_session_path, :method => :delete
+          - else
+            a.dropdown-toggle[href="#" data-toggle="dropdown"]
+              |Личный кабинет
+              b.caret
+            ul.dropdown-menu
+              li = link_to 'Войти', new_profile_session_path
+              li = link_to 'Зарегистрироваться', new_profile_registration_path
+            a.btn.btn-primary.col-xs-12.col-sm-12.col-md-2.col-lg-2 [href=new_ad_url]
+                      |Подать объявление

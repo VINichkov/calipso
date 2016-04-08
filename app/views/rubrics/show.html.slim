@@ -1,0 +1,17 @@
+p#notice
+  = notice
+p
+  strong
+    | Name:
+  = @rubric.name
+p
+  strong
+    | Nambe:
+  = @rubric.nambe
+p
+  strong
+    | Rubric:
+  = @rubric.rubric
+= link_to 'Edit', edit_rubric_path(@rubric)
+|  | 
+= link_to 'Back', rubrics_path

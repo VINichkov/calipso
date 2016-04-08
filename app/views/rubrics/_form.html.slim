@@ -1,0 +1,24 @@
+= form_for(@rubric) do |f|
+  - if @rubric.errors.any?
+    #error_explanation
+      h2
+        = pluralize(@rubric.errors.count, "error")
+        |  prohibited this rubric from being saved:
+      ul
+        - @rubric.errors.full_messages.each do |message|
+          li
+            = message
+  .field
+    = f.label :name
+    br
+    = f.text_field :name
+  .field
+    = f.label :nambe
+    br
+    = f.text_field :nambe
+  .field
+    = f.label :rubric_id
+    br
+    = f.text_field :rubric_id
+  .actions
+    = f.submit

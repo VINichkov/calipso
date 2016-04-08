@@ -20,11 +20,17 @@ module Board
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    #localization
+    config.i18n.default_locale = :ru
+
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
     #установка bootstrap-sass
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+
+
+
     #установка Rails config
     #config.time_zone = Settings.time_zone
   end

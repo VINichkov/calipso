@@ -1,0 +1,27 @@
+p#notice
+  = notice
+h1
+  | Listing Cities
+table
+  thead
+    tr
+      th
+        | Alias
+      th
+        | Name
+      th[colspan="3"]
+  tbody
+    - @cities.each do |city|
+      tr
+        td
+          = city.alias
+        td
+          = city.name
+        td
+          = link_to 'Show', city
+        td
+          = link_to 'Edit', edit_city_path(city)
+        td
+          = link_to 'Destroy', city, method: :delete, data: { confirm: 'Are you sure?' }
+br
+= link_to 'New City', new_city_path
